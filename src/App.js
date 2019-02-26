@@ -1,26 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Navbar from "./src/components";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import "react-Bootstrap/Navbar";
 
-class App extends Component {
+
+class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Router>
+        <div className="App">
+          <header className="App-header">
+            <h1>(React) Google Books Search</h1>
+            <h3>Search for and Save Books of Interest</h3>
+          </header>
+        </div>
+        <Route path="/" exact component={Navbar} />
+        </Router>
     );
   }
 }
