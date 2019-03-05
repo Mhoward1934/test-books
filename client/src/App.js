@@ -1,22 +1,18 @@
 import React, { Component } from 'react';
-import "./App.css";
-import Navbar from "/src/components";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import "react-Bootstrap/Navbar";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Navbar from "./components/Navbar"
+import './App.css';
 
-
-class App extends React.Component {
+class App extends Component {
   render() {
     return (
-      <Router>
-        <div className="App">
-          <header className="App-header">
-            <h1>(React) Google Books Search</h1>
-            <h3>Search for and Save Books of Interest</h3>
-          </header>
-        </div>
-        <Route path="/" exact component={Navbar} />
-        </Router>
+
+      <div className="App">
+        <Navbar />
+        <header className="App-header">
+          <h1>(React) Google Books Search</h1>
+        </header>
+      </div>
     );
   }
 }

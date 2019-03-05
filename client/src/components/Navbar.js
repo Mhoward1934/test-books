@@ -1,23 +1,35 @@
-import React, { Component } from 'react';
-import { Link } from "react-router-dom";
+import React from "react";
+//import { Link } from "react-router-dom";
 
-class Navbar extends React.Component {
-  render() {
-    return (
-      <div className="Navbar">
-        <Navbar bg="light" expand="lg">
-          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Link className="mr-auto">
-              <Link.Link href="#home">Home</Link.Link>
-              <Link.Link href="#link">Link</Link.Link>
-            </Link>
-          </Navbar.Collapse>
-        </Navbar>;
-      </div>
-    );
-  }
-}
+
+const Navbar = () => (
+
+    <div className="navbar" >
+   
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                <a className="navbar-brand" href="#">Google-Books</a>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav mr-auto">
+                        <li className="nav-item active float-right">
+                            <a className="nav-link " href="#">Home <span className="sr-only">(current)</span></a>
+                        </li>
+                        <li className="nav-item float-right">
+                            <a className="nav-link " href="#">Link</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </nav>
+    </div >
+)
+
+
+
+
 
 export default Navbar;
