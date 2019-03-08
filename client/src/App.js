@@ -15,9 +15,9 @@ class App extends Component {
           <div>
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route component={Searchbar} />
             </Switch>
           </div>
+          <Searchbar />
         </div>
       </Router>
     );
