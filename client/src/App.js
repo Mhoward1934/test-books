@@ -1,18 +1,25 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar"
+import Searchbar from "./components/searchbar/searchbar";
 import './App.css';
+import Home from "./components/home/home";
 
 class App extends Component {
   render() {
     return (
 
-      <div className="App">
-        <Navbar />
-        <header className="App-header">
-          <h1>(React) Google Books Search</h1>
-        </header>
-      </div>
+      <Router>
+        <div className="text-center">
+          <Navbar />
+          <div>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route component={Searchbar} />
+            </Switch>
+          </div>
+        </div>
+      </Router>
     );
   }
 }
