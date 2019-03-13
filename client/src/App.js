@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar"
 import Searchbar from "./components/searchbar/searchbar";
 import './App.css';
 import Home from "./components/home/home";
+import Results from "./components/results/results"
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
             </Switch>
           </div>
           <Searchbar />
+          <Results />
         </div>
       </Router>
     );
