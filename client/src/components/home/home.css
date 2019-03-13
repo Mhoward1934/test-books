@@ -8,6 +8,14 @@
     pointer-events: none;
   }
   
+  body, html {
+    background-image: url(./blur-books.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .App-header {
     background-color: #282c34;
     /* min-height: 100vh; */

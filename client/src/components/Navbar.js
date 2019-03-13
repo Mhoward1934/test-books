@@ -15,7 +15,7 @@ const Navbar = () => (
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item active float-right">
-                            <Link className="nav-Link " href="#" to="*">Search<span className="sr-only">(current)</span></Link>
+                            <Link className="nav-Link " href="/search" to="/search">Search<span className="sr-only">(current)</span></Link>
                         </li>
                         <li className="nav-item float-right">
                             <Link className="nav-Link " href="/saved" to="/saved">Saved</Link>
